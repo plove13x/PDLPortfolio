@@ -1,8 +1,6 @@
 // $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
-// bower:scss
-@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
-// endbower
+// @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 
 // .browsehappy {
 //     margin: 0.2em 0;
@@ -111,13 +109,19 @@ $teal2: RGBA(0, 141, 169, 1);
 $deepPurple1: RGBA(36, 0, 120, 1);
 
 $lime1: RGBA(157, 224, 29, 1);      // #9DE01D
+$black22: RGBA(34, 34, 34, 1);
 
 
 
 // PDL Styles
 
-body {
+* {
+    padding: 0;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 .iB {
@@ -132,15 +136,21 @@ body {
     font-style: italic;
 }
 
+// .container {
+//     padding-top: 50px;
+// }
+
 .topMenuBar {
     padding: 1em;
-    background: #222222;
+    background: $black22;
     color: white;
+    // position: fixed;
+    width: 100%;
+    // z-index: 2;
 }
 
 .header {
     border-top: 1px solid $lime1;
-    border-bottom: 1px solid $lime1;
     height: 20em;
 }
 
@@ -149,8 +159,8 @@ body {
     width: 42.5%;
 
         img {
-            width: 100%;
-            height: 20em;
+                width: 100%;
+                height: 20em;
             }
 
 }
@@ -159,10 +169,10 @@ body {
 
     width: 15%;
     vertical-align: top;
-    padding-top: 2em;
+    // padding-top: 0.5em;
 
         h1, h2 {
-            color: $deepPurple1;
+            color: $black22;
             font-family: 'Julius Sans One', sans-serif;
             // font-family: 'Cabin', sans-serif;
             // text-shadow: 0px 2px 2px rgba(157, 224, 29, 0.2);
@@ -170,6 +180,21 @@ body {
             width: 1em;
             letter-spacing: 5em;
             word-wrap: break-word;
+            margin: 1.5em 0;
+        }
+
+        h1 {
+            margin-left: 0.25em;
+            // font-family: 'Cabin', sans-serif;
+        }
+
+        a {
+            color: $deepPurple1;
+            margin: 0 0.3em;
+        }
+
+        a:hover {
+            color: $lime1;
         }
 
 }
@@ -178,20 +203,69 @@ body {
 
     h2 {
         margin: 0;
+        border-top: 1px solid $lime1;
         font-family: 'Julius Sans One', sans-serif;
         // font-family: 'Cabin', sans-serif;
         text-shadow: 0.1em 0.1em 0.2em $deepPurple1;
         font-size: 2.5em;
         padding: 1em 0;
-        background: #222222;
-        color: RGBA(157, 224, 29, 1);
+        background: $black22;
+        color: $lime1;
     }
 
-    div {
-        padding: 5em 0;
-        // background: #222222;
-        // color: RGBA(157, 224, 29, 1);
+}
+
+.sectionContent {
+    padding: 1.5em 0;
+    text-align: center;
+
+    p {
+        margin: 1em 0;
+        font-family: 'Julius Sans One',sans-serif;
     }
+}
+
+h5 {
+    margin-top: 1em;
+    font-family: 'Julius Sans One',sans-serif;
+}
+
+#regions_div {
+    margin: 2em auto;
+    width: 62.5%;
+    height: 400px;
+}
+
+.iconLinks {
+
+        margin: 2em auto;
+
+    a {
+        font-family: 'Julius Sans One',sans-serif;
+        color: $black22;
+        // margin: 0 1em;
+    }
+
+    a:hover {
+        color: $deepPurple1;
+    }
+
+    .two {
+        display: inline-block;
+        margin: 0 1em;
+    }
+
+    span {
+        font-size: 4em;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 0.1em;
+    }
+
+    .middle {
+        font-size: 1em;
+    }
+
 }
 
 

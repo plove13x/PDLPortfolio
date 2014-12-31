@@ -16,21 +16,27 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
 
+        <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Cabin|Julius+Sans+One' rel='stylesheet' type='text/css'>
 
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="container">
             <div class="topMenuBar">
-                |||         <!-- css rotate for menu? -->
+                <span>|||</span>         <!-- css rotate for menu? -->
             </div>
+
+        <div class="container">
+
             <div class="header center">
                 <div class="iB imgSlider">
                     <img src="images/headerImg13.jpg" />
@@ -39,7 +45,10 @@
                     <h2 class="iB">patrick</h2>
                     <h1 class="iB">L O V E</h1>
                     <div>
-                        E-mail | Phone | Resume | GitHub 
+                        <a href='mailto:plove13x@gmail.com?Subject=patricklove.com' title="plove13x@gmail.com"><span class="mega-octicon octicon-mail"></span></a>
+                        <a href='tel:8285051156' title="828-505-1156"><span class="mega-octicon octicon-device-mobile"></span></a>
+                        <a href='https://docs.google.com/document/d/1Z9OKpGiXOxIaoWwG_O5bM9Dzew87d6uffqGZWruQ4nk/edit?usp=sharing' title="Download Resume" target="_blank"><span class="mega-octicon octicon-file-pdf"></span></a>
+                        <a href='https://github.com/plove13x' title="Check out the Code" target="_blank"><span class="mega-octicon octicon-mark-github"></span></a>
                     </div>
                 </div><!--
                 --><div class="iB imgSlider">
@@ -49,18 +58,51 @@
 
             <div class="section">
                 <h2 class="center">Exploring the Web of our World</h2>
-                <div>
+                <div class="sectionContent">
                     <p class="center italic">
                     Writer. Traveler. Sportsman. Dreamer. Mistake-Maker. Lesson-Learner. Bounce-Backer. Hustle+Hacker.
                     </p>
                     <p class="center">
-                        I see the Web as our windfall. My mission is to push the boundaries of how it can benefit us all.
+                        I see the Web as our windfall. My mission: push the boundaries of how it can benefit us all.
                     </p>
                 </div>
             </div>
 
             <div class="section">
                 <h2 class="center">A Glimpse of the Skills</h2>
+                <div class="sectionContent">
+                    projects
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="center">Five Fun Facts</h2>
+                <div class="sectionContent">
+                    fact slider
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="center">Duration of Immersion in Various Cultures</h2>
+                <div class="sectionContent">
+                    <h5 class="center">(excluding the United States)</h5>
+                    <div id="regions_div"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="center">Hit Me Up</h2>
+                <div class="sectionContent">
+                    <div class="iconLinks">
+                        <div class="two"><a href="mailto:plove13x@gmail.com?Subject=patricklove.com" title="email"><span class="mega-octicon octicon-mail"></span> <p class="middle">plove13x@gmail.com</p></a></div>
+                        <div class="two"><a href="tel:8285051156" title="phone"><span class="mega-octicon octicon-device-mobile"></span> <p class="middle">828-505-1156</p></a></div>
+                        <div class="two"><a href="https://docs.google.com/document/d/1Z9OKpGiXOxIaoWwG_O5bM9Dzew87d6uffqGZWruQ4nk/edit?usp=sharing" target="_blank"><span class="mega-octicon octicon-file-pdf"></span> <p class="middle">Download Resume</p></a></div>
+                        <!-- <a href=""><img src="images/linkedIn.png" /></a> -->
+                        <div class="two"><a href="https://github.com/plove13x" target="_blank"><span class="mega-octicon octicon-mark-github"></span> <p class="middle">Check out the Code</p></a></div>
+                        <!-- <a href=""><span class="mega-octicon octicon-globe"></span></a>
+                        <span class="mega-octicon octicon-rocket"></span> -->
+                    </div>
+                </div>
             </div>
             <!-- <div class="header">
                 <ul class="nav nav-pills pull-right">
@@ -114,23 +156,11 @@
         <!-- endbower -->
         <!-- endbuild -->
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
-        <!-- endbuild -->
+
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/geochart.js"></script>
         <!-- endbuild -->
 </body>
 </html>
