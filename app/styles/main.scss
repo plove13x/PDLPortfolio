@@ -105,11 +105,13 @@ $coolTeal: RGBA(0, 177, 185, 1);
 $deepPurple2: RGBA(29, 16, 96, 1);
 $deepPurple3: RGBA(32, 23, 70, 1);
 
+$newLime: RGBA(204, 255, 0, 1);
 $teal2: RGBA(0, 141, 169, 1);
 $deepPurple1: RGBA(36, 0, 120, 1);
 
 $lime1: RGBA(157, 224, 29, 1);      // #9DE01D
 $black22: RGBA(34, 34, 34, 1);
+
 
 
 
@@ -178,36 +180,54 @@ a {
     // min-height: 20em;
     vertical-align: top;
     // background: $lime1;
-    // background: RGBA(204, 255, 0, 1);
     // background: $deepPurple1;
     // padding-top: 0.5em;
 
         h1, h2 {
+
+            // letter-spacing: 0.5em;
             color: $black22;
             // color: $deepPurple1;
-            // color: RGBA(204, 255, 0, 1);
 
             font-weight: bold;
             font-family: 'Julius Sans One', sans-serif;
-            font-family: 'Racing Sans One', cursive;
-            font-family: 'Luckiest Guy', cursive;
-            font-family: 'Julius Sans One', sans-serif;
+            // font-family: 'Racing Sans One', cursive;
+            // font-family: 'Luckiest Guy', cursive;
             // font-family: 'Cabin', sans-serif;
 
-            // text-shadow: 0px 2px 2px rgba(157, 224, 29, 0.2);
             text-shadow: 0.1em 0.1em 0.2em rgba(34, 34, 34, 0.1);
+            // text-shadow: 0px 2px 2px rgba(157, 224, 29, 0.2);
             // text-shadow: 0.1em 0.1em 0.2em rgba(36, 0, 120, 0.1);
 
+            // width: 1em;
+            // letter-spacing: 5em;
+            // word-wrap: break-word;
+            // margin: 1.25em 0 1.25em;
+        }
 
-            width: 1em;
-            letter-spacing: 5em;
-            word-wrap: break-word;
-            margin: 1.25em 0 1.25em;
+        h2 {
+            letter-spacing: 0.5em;
+            margin: 1em 0 0.7em 0.5em;
         }
 
         h1 {
-            margin-left: 0.25em;
+            // margin-left: 0.25em;
             // font-family: 'Cabin', sans-serif;
+
+            // width: 100%;                    // 1em;
+            // letter-spacing: 5em;
+            // word-wrap: break-word;
+            margin: 0.25em auto;
+            // letter-spacing: 0;
+
+        }
+
+        h1:nth-of-type(2), h1:nth-of-type(3), {
+            margin-left: 0.125em;
+        }
+
+        h1:nth-of-type(4) {
+            margin-bottom: 0.8em;
         }
 
         a {
@@ -332,7 +352,6 @@ h5 {
         font-size: 4em;
         text-align: center;
         width: 100%;
-        padding-bottom: 0.1em;
     }
 
     .middle {
