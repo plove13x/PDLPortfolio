@@ -1,7 +1,7 @@
 'use strict';
 
-var imageArray = new Array("images/headerImg13.jpg", "images/headerImg28.jpg", "images/headerImg4.jpg", "images/headerImg19.jpg");
-var imageArray2 = new Array("images/headerImg25.jpg", "images/headerImg7.jpg", "images/headerImg14.jpg", "images/headerImg3.jpg");
+var imageArray = new Array("images/headerImg19.jpg", "images/headerImg28.jpg", "images/headerImg4.jpg", "images/headerImg13.jpg", "images/headerImg5.jpg", "images/headerImg18.jpg");
+var imageArray2 = new Array("images/headerImg3.jpg", "images/headerImg25.jpg", "images/headerImg14.jpg", "images/headerImg7.jpg", "images/headerImg10.jpg", "images/headerImg15.jpg");
     
 $(window).load(function(){
 
@@ -27,8 +27,11 @@ $(window).load(function(){
     var newSlider2 = new Slider(imageArray2, '.slider-images2', 4000, 0);
 
 
+
+/* document.ready? here or before window.load code? */
+
     var funFacts = [
-    '<p>Have you ever gotten bored with plain old Lemon-Lime or Fruit Punch and opted for a Gatorade X-Factor instead? You can thank NHRT (the National Hybrid Research Team) for that. The first website I ever made established the online presence for our admittedly juvenile social club and took the student body by storm in high school. I\'ve been hooked by the power of the web ever since.</p><p>No, we didn\'t reap the financial rewards of such a stroke of mixology brilliance - the idealists we were in high school couldn\'t have been less concerned with intellectual property rights and patents - but we got some serious traffic for a while and then all of a sudden Gatorade started producing their own "hybrids". Unfortunately, the site (www.areyoumixing.com) is no longer accessible due to an overhaul of the Tripod free hosting program, but long live the memories and keep on mixing!</p>',
+    '<p>Have you ever gotten bored with plain old Lemon-Lime or Fruit Punch and opted for a Gatorade X-Factor instead? You can thank NHRT (the National Hybrid Research Team) for that. I made my first website back in high school when I established the online presence for our admittedly juvenile social club, and the site\'s humorous content had the student body flocking in droves. I\'ve been hooked by the power of the web ever since.</p><p>No, we didn\'t reap the financial rewards of such a stroke of mixology brilliance - the idealists we were in high school couldn\'t have been less concerned with intellectual property rights and patents - but we got some serious traffic for a while and then all of a sudden Gatorade started producing their own "hybrids". Unfortunately, the site (www.areyoumixing.com) is no longer accessible due to an overhaul of the Tripod free hosting program, but long live the memories and keep on mixing!</p>',
     '<p>Speaking of high school, I (thanks to some timely self-deprecating humor) was elected as both junior and senior class president of my high school class and gave our graduation speech. I also served as Managing Editor of our high school newspaper that won 1st place at the <em>Dallas Morning News\’</em> Journalism Day competition. Dork!</p>',
     '<p>I love basketball and after college I once tried out for an American Basketball Association team. Ultimately I wasn\'t offered a contract, but on the plus side, I was invited back for another tryout. On the not-so-plus side, one large man who was already under contract chose to refer to me exclusively as "Little Man". This was the first and only time in my life this has happened.</p>',
     '<p>Some might say in my younger years I could be a bit of a problem child, but I wasn\'t the <em>Problem Child</em>. However, since some of the movie\'s birthday party scene was filmed at our house, a keen eye will notice young me in a lion costume. Any Oscar noms went to my Mom though for her role as "woman gets pinned on the ass". Check it out on YouTube: <a target="_blank" href="https://www.youtube.com/watch?v=KhAg5po8InY"><em>Problem Child</em> party scene clip</a></p>',
@@ -53,5 +56,61 @@ $(window).load(function(){
         });
 
     });
+
+
+
+    $('.blackRollUp').hide();
+
+    $('.SSContainer').on('mouseover', function() {
+        $(this).find('.blackRollUp').fadeIn(1000).stop();
+    });
+
+    $('.SSContainer').on('mouseout', function() {
+        $(this).find('.blackRollUp').fadeOut(2000);
+    });
+
+
+    $('.shrunkPic').on('mouseover', function() {
+        $(this).find('.blackRollUp').fadeIn(1000).stop();
+    });
+
+    $('.shrunkPic').on('mouseout', function() {
+        $(this).find('.blackRollUp').fadeOut(2000);
+    });
+
+
+//     $('.projectRC').bind('touchstart touchend', function() {
+//         // var hoverP = $(this).find('.blackRollUp');
+//         // // hoverP.toggleClass('hover_effect');
+//         // hoverP.fadeIn(1000).stop();
+//         $(this).find('.blackRollUp').fadeIn(1000).stop();
+//     });
+
+    $('.projectRC').on({ 'touchstart' : function(){ 
+        $(this).find('.blackRollUp').show();
+        // fadeIn(1500).stop();
+        } 
+    });
+
+    $('.projectRC').on({ 'touchmove' : function(){ 
+        $(this).find('.blackRollUp').show();
+        // fadeIn(1500).stop();
+        } 
+    });
+
+    $(' .leftM, .rightM').on({ 'touchmove' : function(){ 
+        $(this).next('.blackRollUp').show();
+        // fadeIn(1500).stop();
+        } 
+    });
+
+
+
+    $('.projectRC').on({ 'touchend' : function(){ 
+        $(this).find('.blackRollUp').fadeOut(2500);
+        } 
+    });
+
+
 
 });

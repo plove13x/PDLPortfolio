@@ -136,6 +136,12 @@ a {
     text-align: center;
 }
 
+.bold {
+    font-weight: bold;
+    color: $lime1;
+    text-shadow: 0.1em 0.1em 0.2em rgba(34, 34, 34, 0.1);
+}
+
 .italic {
     font-style: italic;
 }
@@ -274,6 +280,198 @@ a {
 }
 
 
+// PROJECTS
+
+.project {
+    // position: relative;
+    width: 85%;
+    height: 100%;
+    margin: 3em auto 3em;
+    // border-bottom: 1px dotted white;
+}
+
+// .last {
+//     border-bottom: none;
+// }
+
+.projectSS {
+    display: inline-block;
+    width: 43%;
+
+    .Right {
+        margin-left: 10%;
+    }
+
+    .Left {
+        margin-right: 10%;
+    }
+    
+    img {
+        width: 100%;
+        // height: 13em;
+        border-radius: 1px;
+    }
+
+    p {
+        margin: 0 auto;
+    }
+}
+
+.mThai {
+    background: url('../images/mThaiSS.png');
+}
+
+.WGN {
+    background: url('../images/WGNSS.png');
+}
+
+.TBBG {
+    background: url('../images/TBBSS.png');
+}
+
+.SSContainer {                  // THESE STYLES MUST COME AFTER EACH PROJECT URL ABOVE OR ELSE REPEATED INSIDE EACH SELECTOR
+    background-size: 100% 100%;
+    height: 13em;
+    border: 1px solid $deepPurple1;
+    border-radius: 1px;
+}
+
+.blackRollUp {
+    height: 100%;
+    opacity: 0.75;
+    background: black;
+    box-sizing: border-box;
+    padding: 2.5em 1em;
+    text-align: center;        
+    // transition: 2;
+    // visibility: hidden;
+
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.25em;
+
+}
+
+// .hidden {
+//     visibility: hidden;
+// }
+
+// .showing {
+//     visibility: visible;
+// }
+
+.projectRC {
+    display: inline-block;
+    vertical-align: top;
+    width: 57%;
+
+    h4 {
+        font-family: 'Julius Sans One', sans-serif;
+        // font-family: garamond;
+        color: white;
+        background: $deepPurple1;
+        padding: 0.85em;
+    }
+
+    p {
+        width: 90%;
+        margin: 0 auto;                 // 1em auto on portfolio version 1.0
+        // text-shadow: 0px 2px 2px rgba(36, 0, 120, 0.2);
+    }
+
+    .bodyGraf {
+        margin-top: 1.25em;
+        font-family: garamond;
+        font-size: 80%;
+    }
+
+    .noMargin {
+        font-size: 87.5%;
+        margin-top: 0.5em;
+    }
+
+    .noMargin a {
+        font-weight: bold;
+        color: $black22;
+    }
+
+    .noMargin a:hover {
+        color: $deepPurple1;
+    }
+}
+
+.whiteDotBtm {
+    padding-top: 0.75em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px dotted $lime1;
+    text-shadow: 0.1em 0.1em 0.2em rgba(34, 34, 34, 0.1);
+}
+
+
+
+.chart h5 {
+    margin: -2em 0 4em;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+#regions_div {
+    margin: 2em auto;
+    width: 85%;
+    height: 400px;
+}
+
+.contactInfo {
+    width: 85%;
+    margin: 0 auto;
+
+    .iconLinks {
+        margin: 0 auto;
+        text-align: center;
+        // background: white;
+    }
+
+    a {
+        color: black;
+        // margin: 0 1em;
+    }
+
+    a:hover {
+        color: $deepPurple1;
+    }
+
+    .two {
+        display: inline-block;
+        margin: 0 1em;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    span {
+        font-size: 4em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .middle {
+        font-size: 1em;
+    }
+}
+
+.shrunkPic {
+    margin: 1em 0;
+    border: 1px solid $deepPurple1;
+    // box-sizing: border-box;
+    border-radius: 13px;
+
+    p {
+        width: 100%;
+    }
+}
+
+
 // FUN FACTS
 
 .sliderFFContainer {
@@ -362,6 +560,79 @@ h5 {
         margin-bottom: 0;
     }
 
+}
+
+
+// MEDIA QUERIES
+
+@media (min-width: 1177px) {
+    .shrunkPic {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1177px) and (max-width: 1276px) {
+    .projectRC {
+        width: 60%; 
+    }
+        
+    .projectSS {
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 1176px) {
+    .projectSS {
+        display: none;
+    }
+
+    .projectRC {
+        width: 100%;
+    }
+
+    .shrunkPic {
+        display: normal;
+        // width: 100%;
+        background-size: 100% 100%;
+        height: 13em;
+    }
+
+    // .shrunkPic img {
+    //     width: 100%;
+    // }
+}
+
+@media (max-width: 600px) {
+    .sideNav span {
+        font-size: 100%;
+        // margin-top: 1em;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 712px) {
+    .shrunkPic {
+        margin: 1em 2.5em;
+    }
+}
+
+@media (min-width: 713px) and (max-width: 881px) {
+    .shrunkPic {
+        margin: 1em 5em;
+    }
+}
+
+@media (min-width: 882px) and (max-width: 1060px) {
+    .shrunkPic {
+        margin: 1em 7em;
+    }
+}
+
+@media (min-width: 1061px) and (max-width: 1176px) {
+    .shrunkPic {
+        margin: 1em 9.5em;
+    }
 }
 
 
