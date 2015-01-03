@@ -413,58 +413,6 @@ a {
 }
 
 
-
-.chart h5 {
-    margin: -2em 0 4em;
-    text-align: center;
-    font-family: 'Julius Sans One', sans-serif;
-}
-
-#regions_div {
-    margin: 2em auto;
-    width: 85%;
-    height: 400px;
-}
-
-.contactInfo {
-    width: 85%;
-    margin: 0 auto;
-
-    .iconLinks {
-        margin: 0 auto;
-        text-align: center;
-        // background: white;
-    }
-
-    a {
-        color: black;
-        // margin: 0 1em;
-    }
-
-    a:hover {
-        color: $deepPurple1;
-    }
-
-    .two {
-        display: inline-block;
-        margin: 0 1em;
-    }
-
-    .relative {
-        position: relative;
-    }
-
-    span {
-        font-size: 4em;
-        text-align: center;
-        width: 100%;
-    }
-
-    .middle {
-        font-size: 1em;
-    }
-}
-
 .shrunkPic {
     margin: 1em 0;
     border: 1px solid $deepPurple1;
@@ -531,6 +479,45 @@ h5 {
 
 
 // CONTACT
+
+// .contactInfo {
+//     width: 85%;
+//     margin: 0 auto;
+
+//     .iconLinks {
+//         margin: 0 auto;
+//         text-align: center;
+//         // background: white;
+//     }
+
+//     a {
+//         color: black;
+//         // margin: 0 1em;
+//     }
+
+//     a:hover {
+//         color: $deepPurple1;
+//     }
+
+//     .two {
+//         display: inline-block;
+//         margin: 0 1em;
+//     }
+
+//     .relative {
+//         position: relative;
+//     }
+
+//     span {
+//         font-size: 4em;
+//         text-align: center;
+//         width: 100%;
+//     }
+
+//     .middle {
+//         font-size: 1em;
+//     }
+// }
 
 .iconLinks {
 
@@ -699,4 +686,28 @@ h5 {
     }
 }
 
+
+// FUN FACTS MEDIA QUERIES
+
+@media (max-width: 786px) {
+    .fFact p {
+        // font-family: 'garamond';
+        font-size: 80%;
+    }
+}
+
+
+// GEOCHART MEDIA QUERIES
+
+@media (min-width: 1001px) and (max-width: 1296px) {
+    #regions_div {
+        width: 87.5%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #regions_div {
+        width: 100%;
+    }
+}
 
