@@ -239,7 +239,7 @@ a {
         a {
             color: $deepPurple1;
             text-shadow: 0.1em 0.1em 0.2em rgba(36, 0, 120, 0.1);
-            margin: 0 0.4em;
+            margin: 0 0.5em;
         }
 
         a:hover {
@@ -567,7 +567,71 @@ h5 {
 }
 
 
-// MEDIA QUERIES
+// HEADER MEDIA QUERIES
+
+@media (min-width: 1005px) and (max-width: 1274px) {
+
+    .vertText {
+
+        h2 {
+            letter-spacing: 0.25em;
+            margin: 1em 0 0.7em 0.25em;
+        }
+
+        a {
+            color: $deepPurple1;
+            text-shadow: 0.1em 0.1em 0.2em rgba(36, 0, 120, 0.1);
+            margin: 0 0.25em;
+        }
+
+    }
+
+}
+
+@media (max-width: 1005px) {                    // 800 px
+    
+    .header .imgSlider:nth-child(1) {
+        width: 70%;  
+    }
+
+    .header .imgSlider:nth-child(3) {
+        display: none;   
+    }
+
+    .vertText {
+        width: 30%;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .vertText {
+
+        h2 {
+            font-size: 90%;
+        }
+
+        h1:nth-of-type(4) {
+            margin-bottom: 0.4em;
+        }
+
+        .vLDiv {
+            width: 50px;
+            margin: 0.4em 0;
+        }
+
+
+    }
+
+
+
+    .vertLinks a:nth-child(3) {
+
+    }
+}
+
+
+// PROJECTS MEDIA QUERIES
 
 @media (min-width: 1177px) {
     .shrunkPic {
@@ -639,20 +703,4 @@ h5 {
     }
 }
 
-
-
-@media (max-width: 800px) {
-    
-    .header .imgSlider:nth-child(1) {
-        width: 70%;  
-    }
-
-    .header .imgSlider:nth-child(3) {
-        display: none;   
-    }
-
-    .vertText {
-        width: 30%;
-    }
-}
 
