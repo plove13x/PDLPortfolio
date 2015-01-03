@@ -138,7 +138,6 @@ a {
 
 .bold {
     font-weight: bold;
-    color: $lime1;
     text-shadow: 0.1em 0.1em 0.2em rgba(34, 34, 34, 0.1);
 }
 
@@ -385,18 +384,20 @@ a {
         font-size: 80%;
     }
 
-    .noMargin {
+    .projectLink {
+        color: $lime1;
         font-size: 87.5%;
         margin-top: 0.5em;
     }
 
-    .noMargin a {
+    .projectLink a {
         font-weight: bold;
-        color: $black22;
+        color: $deepPurple1;
     }
 
-    .noMargin a:hover {
-        color: $deepPurple1;
+    .projectLink a:hover {
+        color: $lime1;
+        text-shadow: 0.1em 0.1em 0.2em rgba(34, 34, 34, 0.1);
     }
 
     .blackRollUp {
@@ -524,7 +525,7 @@ h5 {
 
 #regions_div {
     margin: 2em auto;
-    width: 62.5%;
+    width: 75%;
     height: 400px;
 }
 
@@ -533,7 +534,7 @@ h5 {
 
 .iconLinks {
 
-        margin: 2em auto;
+        margin: 2em auto 0.5em;
 
     a {
         font-family: 'Julius Sans One',sans-serif;
@@ -547,7 +548,8 @@ h5 {
 
     .two {
         display: inline-block;
-        margin: 0 1em;
+        margin: 0 1em 1.5em;
+        width: 178px;
     }
 
     span {
@@ -620,14 +622,8 @@ h5 {
             margin: 0.4em 0;
         }
 
-
     }
 
-
-
-    .vertLinks a:nth-child(3) {
-
-    }
 }
 
 
