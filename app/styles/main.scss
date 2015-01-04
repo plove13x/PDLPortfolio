@@ -519,7 +519,8 @@ h5 {
 @media (max-width: 1005px) {                    // 800 px
 
     .header .sliderMenu:nth-child(1) {
-        width: 70%;  
+        width: 70%;
+        padding: 1em 0 0 2em;  
     }
     
     .header .imgSlider:nth-child(2) {
@@ -626,6 +627,13 @@ h5 {
 @media (min-width: 1061px) and (max-width: 1176px) {
     .shrunkPic {
         margin: 1em 9.5em;
+    }
+}
+
+
+@media (max-width: 505px) {
+    .threeLinezDeep {
+        padding: 1.5em 1em;
     }
 }
 
