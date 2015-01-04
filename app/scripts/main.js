@@ -1,5 +1,6 @@
 'use strict';
 
+$('.sliderMenu').hide();
 var imageArray = new Array("images/headerImg19.jpg", "images/headerImg28.jpg", "images/headerImg4.jpg", "images/headerImg13.jpg", "images/headerImg5.jpg", "images/headerImg18.jpg");
 var imageArray2 = new Array("images/headerImg3.jpg", "images/headerImg25.jpg", "images/headerImg14.jpg", "images/headerImg7.jpg", "images/headerImg10.jpg", "images/headerImg15.jpg");
     
@@ -23,8 +24,8 @@ $(window).load(function(){
         };
     };
 
-    var newSlider = new Slider(imageArray, '.slider-images', 4000, 0);
-    var newSlider2 = new Slider(imageArray2, '.slider-images2', 4000, 0);
+    var newSlider = new Slider(imageArray, '.slider-images', 5000, 0);
+    var newSlider2 = new Slider(imageArray2, '.slider-images2', 5000, 0);
 
 
 
@@ -109,6 +110,18 @@ $(window).load(function(){
     $('.projectRC').on({ 'touchend' : function(){ 
         $(this).find('.blackRollUp').fadeOut(2500);
         } 
+    });
+
+
+
+
+
+
+    $('.topMenuBar button').on('click', function() {
+        console.log('yo');
+        // $('.imgSlider:first').toggle();
+        $('.sliderMenu').toggle();
+        // $('.sliderMenu').addClass('iB');
     });
 
 

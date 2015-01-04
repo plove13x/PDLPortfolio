@@ -1,97 +1,3 @@
-// $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-
-// @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
-
-// .browsehappy {
-//     margin: 0.2em 0;
-//     background: #ccc;
-//     color: #000;
-//     padding: 0.2em 0;
-// }
-
-// /* Space out content a bit */
-// body {
-//     padding-top: 20px;
-//     padding-bottom: 20px;
-// }
-
-// /* Everything but the jumbotron gets side spacing for mobile first views */
-// .header,
-// .marketing,
-// .footer {
-//     padding-left: 15px;
-//     padding-right: 15px;
-// }
-
-// /* Custom page header */
-// .header {
-//     border-bottom: 1px solid #e5e5e5;
-
-//     /* Make the masthead heading the same height as the navigation */
-//     h3 {
-//         margin-top: 0;
-//         margin-bottom: 0;
-//         line-height: 40px;
-//         padding-bottom: 19px;
-//     }
-// }
-
-// /* Custom page footer */
-// .footer {
-//     padding-top: 19px;
-//     color: #777;
-//     border-top: 1px solid #e5e5e5;
-// }
-
-// .container-narrow > hr {
-//     margin: 30px 0;
-// }
-
-// /* Main marketing message and sign up button */
-// .jumbotron {
-//     text-align: center;
-//     border-bottom: 1px solid #e5e5e5;
-//     .btn {
-//         font-size: 21px;
-//         padding: 14px 24px;
-//     }
-// }
-
-// /* Supporting marketing content */
-// .marketing {
-//     margin: 40px 0;
-//     p + h4 {
-//         margin-top: 28px;
-//     }
-// }
-
-// /* Responsive: Portrait tablets and up */
-// @media screen and (min-width: 768px) {
-//     .container {
-//         max-width: 730px;
-//     }
-
-//     /* Remove the padding we set earlier */
-//     .header,
-//     .marketing,
-//     .footer {
-//         padding-left: 0;
-//         padding-right: 0;
-//     }
-
-//     /* Space out the masthead */
-//     .header {
-//         margin-bottom: 30px;
-//     }
-
-//     /* Remove the bottom border on the jumbotron for visual effect */
-//     .jumbotron {
-//         border-bottom: 0;
-//     }
-// }
-
-
-
 // COLOR VARIABLES
 
 $purple1: RGBA(101, 45, 134, 1);
@@ -111,7 +17,6 @@ $deepPurple1: RGBA(36, 0, 120, 1);
 
 $lime1: RGBA(157, 224, 29, 1);      // #9DE01D
 $black22: RGBA(34, 34, 34, 1);
-
 
 
 
@@ -153,12 +58,48 @@ a {
 // HEADER
 
 .topMenuBar {
-    padding: 1em;
+    padding: 0em;                   // 1em or 2em before div below
     background: $black22;
     color: white;
     // position: fixed;
     width: 100%;
     // z-index: 2;
+
+    div {
+        // margin: 0em 0 0 1.5em;
+        // padding: 0 0 1em .75em;
+        // transform: rotate(90deg);
+        // transform-origin: left top 0;
+        // font-size: 1.75em;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: $lime1;
+    }
+
+    button {
+        // padding: 0 0 1em .75em;
+        margin: 1em 0 1em 2em;
+        transform: rotate(90deg);
+        transform-origin: left top 0;
+        font-size: 1em;
+        color: white;
+        background: $black22;
+        border: 0;
+    }
+
+    button:hover {
+        color: $lime1;
+        cursor: pointer;
+    }
+
+    button:focus {
+        outline: 0;
+    }
 }
 
 .header {
@@ -176,6 +117,43 @@ a {
                 height: 320px;              // 20em;
             }
 
+}
+
+.sliderMenu {
+    // display: none;
+    position: absolute;                 // haven't made parent element relative yet but working anyway...
+    top: 50px;
+    left: 0;
+    width: 42.5%;
+    height: 320px;
+    vertical-align: top;
+    background: $lime1;
+    padding: 1em 0 0 2.5em;
+    font-size: 1em;
+    font-family: 'Julius Sans One', sans-serif;
+    opacity: 0.825;
+    z-index: 2;
+
+
+    a {
+        color: $deepPurple1;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    p {
+        margin: 2em 0;
+        font-weight: bold;
+        letter-spacing: 0.5em;
+    }
+
+    p span {
+        font-family: 'garamond';
+        font-weight: normal;
+        letter-spacing: 0;
+    }
 }
 
 .vertText {
@@ -480,45 +458,6 @@ h5 {
 
 // CONTACT
 
-// .contactInfo {
-//     width: 85%;
-//     margin: 0 auto;
-
-//     .iconLinks {
-//         margin: 0 auto;
-//         text-align: center;
-//         // background: white;
-//     }
-
-//     a {
-//         color: black;
-//         // margin: 0 1em;
-//     }
-
-//     a:hover {
-//         color: $deepPurple1;
-//     }
-
-//     .two {
-//         display: inline-block;
-//         margin: 0 1em;
-//     }
-
-//     .relative {
-//         position: relative;
-//     }
-
-//     span {
-//         font-size: 4em;
-//         text-align: center;
-//         width: 100%;
-//     }
-
-//     .middle {
-//         font-size: 1em;
-//     }
-// }
-
 .iconLinks {
 
         margin: 2em auto 0.5em;
@@ -578,12 +517,16 @@ h5 {
 }
 
 @media (max-width: 1005px) {                    // 800 px
+
+    .header .sliderMenu:nth-child(1) {
+        width: 70%;  
+    }
     
-    .header .imgSlider:nth-child(1) {
+    .header .imgSlider:nth-child(2) {
         width: 70%;  
     }
 
-    .header .imgSlider:nth-child(3) {
+    .header .imgSlider:nth-child(4) {
         display: none;   
     }
 
