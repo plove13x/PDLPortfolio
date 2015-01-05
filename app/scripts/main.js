@@ -1,8 +1,8 @@
 'use strict';
 
 $('.sliderMenu').hide();
-var imageArray = new Array("images/headerImg19.jpg", "images/headerImg28.jpg", "images/headerImg4.jpg", "images/headerImg13.jpg", "images/headerImg5.jpg", "images/headerImg18.jpg");
-var imageArray2 = new Array("images/headerImg3.jpg", "images/headerImg25.jpg", "images/headerImg14.jpg", "images/headerImg7.jpg", "images/headerImg10.jpg", "images/headerImg15.jpg");
+var imageArray = new Array("images/headerImg19.jpg", "images/headerImg28.jpg", "images/headerImg4.jpg", "images/headerImg13.jpg", "images/headerImg5.jpg", "images/headerImg18.jpg", "images/headerImg33.jpg", "images/headerImg35.jpg", "images/headerImg32.jpg", "images/headerImg38.jpg", "images/headerImg21.jpg", "images/headerImg24.jpg", "images/headerImg27.jpg", "images/headerImg30.jpg", "images/headerImg20.jpg", "images/headerImg11.jpg", "images/gavin.jpg");
+var imageArray2 = new Array("images/headerImg3.jpg", "images/headerImg25.jpg", "images/headerImg14.jpg", "images/headerImg7.jpg", "images/headerImg10.jpg", "images/headerImg15.jpg", "images/headerImg36.jpg", "images/headerImg34.jpg", "images/headerImg31.jpg", "images/headerImg39.jpg", "images/headerImg22.jpg", "images/headerImg2.jpg", "images/headerImg26.jpg", "images/headerImg29.png", "images/headerImg12.jpg", "images/headerImg8.jpg", "images/headerImg9.jpg");
     
 $(window).load(function(){
 
