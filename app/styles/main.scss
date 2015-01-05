@@ -323,7 +323,7 @@ a {
 
 .SSContainer {                  // THESE STYLES MUST COME AFTER EACH PROJECT URL ABOVE OR ELSE REPEATED INSIDE EACH SELECTOR
     background-size: 100% 100%;
-    height: 13em;
+    height: 206px;                   // 13em (206px)
     border: 1px solid $deepPurple1;
     border-radius: 1px;
 }
@@ -415,6 +415,32 @@ a {
         width: 100%;
     }
 }
+
+
+.leftM {
+    position: absolute;
+    height: 57.5%;
+    // margin: 3em 0;
+    margin-left: -20%;
+    width: 15%;
+}
+
+.leftMRG {
+    position: absolute;
+    height: 57.5%;
+    left: 0;
+    width: 15%;
+}
+
+.rightM {
+    position: absolute;
+    height: 57.5%;
+    left: 85%;
+    width: 15%;
+    // margin: 3em 0;
+}
+
+
 
 
 ///// FUN FACTS

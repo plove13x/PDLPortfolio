@@ -99,7 +99,7 @@ $(window).load(function(){
         } 
     });
 
-    $(' .leftM, .rightM').on({ 'touchmove' : function(){ 
+    $(' .leftM, .rightM, .leftMRG').on({ 'touchmove' : function(){ 
         $(this).next('.blackRollUp').show();
         // fadeIn(1500).stop();
         } 
@@ -118,7 +118,6 @@ $(window).load(function(){
 
 
     $('.topMenuBar button').on('click', function() {
-        console.log('yo');
         // $('.imgSlider:first').toggle();
         $('.sliderMenu').toggle();
         // $('.sliderMenu').addClass('iB');
