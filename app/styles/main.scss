@@ -11,7 +11,7 @@ $coolTeal: RGBA(0, 177, 185, 1);
 $deepPurple2: RGBA(29, 16, 96, 1);
 $deepPurple3: RGBA(32, 23, 70, 1);
 
-$newLime: RGBA(204, 255, 0, 1);
+$newLime: RGBA(204, 255, 0, 1); // better on black bg
 $teal2: RGBA(0, 141, 169, 1);
 $deepPurple1: RGBA(36, 0, 120, 1);
 
@@ -26,6 +26,7 @@ $black22: RGBA(34, 34, 34, 1);
     padding: 0;
     margin: 0;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -78,13 +79,16 @@ a {
     }
 
     a:hover {
-        color: $lime1;
+        // color: $lime1;
+        color: $newLime;
     }
 
     button {
         // padding: 0 0 1em .75em;
-        margin: 1em 0 1em 2em;
+        margin: 1em 0 1em 32px;
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
+        -webkit-transform-origin: left top 0;
         transform-origin: left top 0;
         font-size: 1em;
         color: white;
@@ -93,7 +97,8 @@ a {
     }
 
     button:hover {
-        color: $lime1;
+        // color: $lime1;
+        color: $newLime;
         cursor: pointer;
     }
 
@@ -128,7 +133,8 @@ a {
     height: 320px;
     vertical-align: top;
     background: $lime1;
-    padding: 1em 0 0 2.5em;
+    // background: $newLime;
+    padding: 1em 0 1em 2.5em;
     font-size: 1em;
     font-family: 'Julius Sans One', sans-serif;
     opacity: 0.825;
@@ -150,7 +156,7 @@ a {
     }
 
     p span {
-        font-family: 'garamond';
+        font-family: 'garamond', 'EB Garamond', serif;
         font-weight: normal;
         letter-spacing: 0;
     }
@@ -239,8 +245,8 @@ a {
         font-size: 2.5em;
         padding: 1em 0;
         background: $black22;
-        color: $lime1;
-        color: RGBA(204, 255, 0, 1);
+        // color: $lime1;
+        color: $newLime;
     }
 
 }
@@ -326,7 +332,6 @@ a {
     color: white;
     font-size: 1.5em;
     line-height: 1.25em;
-
 }
 
 // .hidden {
@@ -344,7 +349,7 @@ a {
 
     h4 {
         font-family: 'Julius Sans One', sans-serif;
-        // font-family: garamond;
+        // font-family: 'garamond', 'EB Garamond', serif;
         color: white;
         background: $deepPurple1;
         padding: 0.85em;
@@ -358,7 +363,7 @@ a {
 
     .bodyGraf {
         margin-top: 1.25em;
-        font-family: garamond;
+        font-family: 'Garamond', 'EB Garamond', serif;
         font-size: 80%;
     }
 
@@ -379,7 +384,7 @@ a {
     }
 
     .blackRollUp {
-        border-radius: 12px;
+        border-radius: 8px;
     }
 }
 
@@ -395,7 +400,7 @@ a {
     margin: 1em 0;
     border: 1px solid $deepPurple1;
     // box-sizing: border-box;
-    border-radius: 13px;
+    border-radius: 9px;
 
     p {
         width: 100%;
@@ -519,12 +524,11 @@ h5 {
 @media (max-width: 1005px) {                    // 800 px
 
     .header .sliderMenu:nth-child(1) {
-        width: 70%;
-        padding: 1em 0 0 2em;  
+        width: 70%; 
     }
     
     .header .imgSlider:nth-child(2) {
-        width: 70%;  
+        width: 70%; 
     }
 
     .header .imgSlider:nth-child(4) {
@@ -537,6 +541,15 @@ h5 {
 }
 
 @media (max-width: 630px) {
+
+    .header .sliderMenu:nth-child(1) {
+        padding: 20px 0 20px 1em;                   // Used pixels here and in selector below (as opposed to ems in global style) to alleviate spacing imperfection on mobile               
+    }
+
+    .header .sliderMenu:nth-child(1) p {
+        height: 40px;
+        margin: 1em 0;
+    }
 
     .vertText {
 
@@ -642,7 +655,7 @@ h5 {
 
 @media (max-width: 786px) {
     .fFact p {
-        // font-family: 'garamond';
+        // font-family: 'garamond', 'EB Garamond', serif;
         font-size: 80%;
     }
 }
