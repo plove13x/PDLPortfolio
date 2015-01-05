@@ -1,4 +1,4 @@
-// COLOR VARIABLES
+///// COLOR VARIABLES
 
 $purple1: RGBA(101, 45, 134, 1);
 $blue: RGBA(0, 57, 166, 1);
@@ -20,7 +20,7 @@ $black22: RGBA(34, 34, 34, 1);
 
 
 
-// GLOBAL STYLE
+///// GLOBAL STYLE
 
 * {
     padding: 0;
@@ -56,7 +56,7 @@ a {
 // }
 
 
-// HEADER
+///// HEADER
 
 .topMenuBar {
     padding: 0em;                   // 1em or 2em before div below
@@ -83,14 +83,23 @@ a {
         color: $newLime;
     }
 
+    div:nth-child(1) {                  // button container
+        padding: 16px 0 16px 32px;
+        background: $black22;
+        height: 52px;
+    }
+
     button {
+        height: 18px;                   // behaves as width though due to transform below
+        width: 18px;                    // behaves as height though due to transform below
         // padding: 0 0 1em .75em;
-        margin: 1em 0 1em 32px;
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
         -webkit-transform-origin: left top 0;
         transform-origin: left top 0;
+
         font-size: 1em;
+        // letter-spacing: 2px;
         color: white;
         background: $black22;
         border: 0;
@@ -127,7 +136,7 @@ a {
 .sliderMenu {
     // display: none;
     position: absolute;                 // haven't made parent element relative yet but working anyway...
-    top: 50px;
+    top: 52px;
     left: 0;
     width: 42.5%;
     height: 320px;
@@ -232,7 +241,7 @@ a {
 }
 
 
-// CONTENT SECTIONS
+///// CONTENT SECTIONS
 
 .section {
 
@@ -263,7 +272,7 @@ a {
 }
 
 
-// PROJECTS
+///// PROJECTS
 
 .project {
     // position: relative;
@@ -408,7 +417,7 @@ a {
 }
 
 
-// FUN FACTS
+///// FUN FACTS
 
 .sliderFFContainer {
 
@@ -447,7 +456,7 @@ a {
 }
 
 
-// GEOCHART
+///// GEOCHART
 
 h5 {
     // margin-top: 1em;
@@ -461,7 +470,7 @@ h5 {
 }
 
 
-// CONTACT
+///// CONTACT
 
 .iconLinks {
 
@@ -500,7 +509,7 @@ h5 {
 }
 
 
-// HEADER MEDIA QUERIES
+///// HEADER MEDIA QUERIES
 
 @media (min-width: 1005px) and (max-width: 1274px) {
 
@@ -570,17 +579,67 @@ h5 {
 
 }
 
+@media (max-width: 394px) {
 
-// PROJECTS MEDIA QUERIES
+    .vertText {
+
+        h2 {
+            font-size: 75%;
+        }
+
+        .vLDiv {
+            width: 40px;
+            margin: 0.5em 0;
+        }
+
+        .vLDiv span {
+            font-size: 150%;
+        }
+
+    }
+}
+
+@media (max-width: 320px) {
+
+    .vertText {
+
+        h2 {
+            font-size: 50%;
+            margin: 1em 0.2em 0.7em 0.2em;
+        }
+    }
+
+    .sliderMenu {
+        font-size: 0.75em;
+    } 
+}
+
+@media (max-width: 279px) {
+
+        .vertText {
+
+            .vLDiv {
+                width: 36px;
+                margin: 0.25em 0;
+            }
+
+            .vLDiv span {
+                font-size: 120%;
+            }
+        }
+}
+
+
+///// PROJECTS MEDIA QUERIES
 
 @media (min-width: 1177px) {
     .shrunkPic {
         display: none;
     }
-
 }
 
 @media (min-width: 1177px) and (max-width: 1276px) {
+    
     .projectRC {
         width: 60%; 
     }
@@ -588,10 +647,10 @@ h5 {
     .projectSS {
         width: 40%;
     }
-
 }
 
 @media (max-width: 1176px) {
+    
     .projectSS {
         display: none;
     }
@@ -644,14 +703,32 @@ h5 {
 }
 
 
+@media (max-width: 377px) {
+    .twoLinezDeep {
+        padding: 1.5em 1em;
+    }
+}
+
+@media (max-width: 311px) {
+    .twoLinezDeep {
+        font-size: 120%;
+    }
+}
+
 @media (max-width: 505px) {
     .threeLinezDeep {
         padding: 1.5em 1em;
     }
 }
 
+@media (max-width: 358px) {
+    .threeLinezDeep {
+        font-size: 120%;
+    }
+}
 
-// FUN FACTS MEDIA QUERIES
+
+///// FUN FACTS MEDIA QUERIES
 
 @media (max-width: 786px) {
     .fFact p {
@@ -661,7 +738,7 @@ h5 {
 }
 
 
-// GEOCHART MEDIA QUERIES
+///// GEOCHART MEDIA QUERIES
 
 @media (min-width: 1001px) and (max-width: 1296px) {
     #regions_div {
