@@ -4,7 +4,7 @@ google.setOnLoadCallback(drawRegionsMap);
 function drawRegionsMap() {
 
     var data = google.visualization.arrayToDataTable([
-        ['Country', 'Weeks', 'Last Visited'],
+        ['Country', 'Weeks Logged', 'Last Visited'],
         ['Aruba', 2, 2014],
         ['Bahamas', 1, 2000],
         ['Belgium', 1, 2006],
