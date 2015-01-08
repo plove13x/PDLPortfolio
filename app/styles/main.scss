@@ -479,10 +479,6 @@ a {
         border: 1px solid $deepPurple1;
     }
 
-    button:active {
-        border: none;
-    }
-
 }
 
 
@@ -757,6 +753,12 @@ h5 {
     }
 }
 
+@media (min-width: 286px) and (max-width: 358px) {
+    .threeLinezDeep {
+        padding: 2.5em 1em;
+    }
+}
+
 
 ///// FUN FACTS MEDIA QUERIES
 
@@ -769,7 +771,8 @@ h5 {
 
 @media (max-width: 479px) {
     .fFact p.smallerFont {
-        font-size: 60%;
+        // font-size: 70%;
+        line-height: 1.5em;
         
     }
 
@@ -777,6 +780,26 @@ h5 {
         font-family: 'garamond', 'EB Garamond', serif;
     }
 }
+
+@media (max-width: 1000px) {
+
+    .sliderFFContainer {
+
+        button:hover {
+            color: white;
+            background: $deepPurple1;
+            border: 1px solid white;
+        }
+
+        button:active {
+            color: $deepPurple1;
+            background: white;
+            border: 1px solid $deepPurple1;
+        }
+
+    }
+}
+
 
 ///// GEOCHART MEDIA QUERIES
 

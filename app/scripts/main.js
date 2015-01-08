@@ -40,6 +40,8 @@ $(window).load(function(){
     ];
 
     var counterFF = 0;
+    var fFHeader = $('#moments');
+
 
     $('.sliderFFContainer button').on('click', function(){
         if ($(this).hasClass('forward')) {
@@ -55,6 +57,10 @@ $(window).load(function(){
             fFP.html(funFacts[counterFF]);
             fFP.fadeIn(3000);
         });
+
+        $('html,body').animate({
+            scrollTop: fFHeader.offset().top
+        }, 1000);
 
     });
 
@@ -134,7 +140,14 @@ $(window).load(function(){
           if (target.length) {
             $('html,body').animate({
               scrollTop: target.offset().top
-            }, 1000);
+            }, 
+
+            {                                       // ! these four lines can be replaced by simply '1500'
+                duration: 1500,
+                easing: 'swing' // try using 'linear' too
+            }
+
+            );
             return false;
           }
         }
