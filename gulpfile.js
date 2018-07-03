@@ -72,10 +72,17 @@ gulp.task('clean', function () {
     return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
 });
 
-gulp.task('build', ['html', 'images', 'fonts', 'extras']);
+gulp.task('build', ['html', 'images', 'fonts', 'extras', 'cname']);
 
 gulp.task('default', ['clean'], function () {
     gulp.start('build');
+});
+
+// NOT SURE if this is working tho...Copy CNAME file task
+gulp.task('cname', function() {
+    console.log('Running the gulpfile and the copy CNAME task');
+    return gulp.src('CNAME')
+        .pipe(gulp.dest('dist'));
 });
 
 
