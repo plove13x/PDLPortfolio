@@ -27,6 +27,7 @@ function drawRegionsMap() {
         ['United Kingdom', 3, 1997],
         ['Guatemala', 4, 2012],
         ['Honduras', 2, 2012],
+        ['Indonesia', 2, 2018],
         ['Japan', 1, 2009],
         ['Luxembourg', 1, 2006],
         ['Malaysia', 4, 2018],
