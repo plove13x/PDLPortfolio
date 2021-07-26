@@ -37,14 +37,15 @@ function drawRegionsMap() {
         ['Norway', 1, 2006],
         ['Panama', 2, 2016],
         ['Peru', 13, 2014],
-        ['Philippines', 4, 2018],
+        ['Philippines', 22, 2019],
         ['Portugal', 1, 2006],
         ['Russia', 2, 2006],
         ['Spain', 2, 2006],
         ['Sweden', 1, 2006],
-        ['Thailand', 71, 2018], // as of 2-July-2018
+        ['Thailand', 79, 2019], // as of 2-July-2018
         // ['United States', 0, 2018],
-        ['Venezuela', 3, 2014]
+        ['Venezuela', 3, 2014],
+        ['Vietnam', 7, 2019]
 
     ]);
 
