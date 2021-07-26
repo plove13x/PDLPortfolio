@@ -42,10 +42,10 @@ function drawRegionsMap() {
         ['Russia', 2, 2006],
         ['Spain', 2, 2006],
         ['Sweden', 1, 2006],
-        ['Thailand', 79, 2019], // as of 2-July-2018
+        ['Thailand', 80, 2019], // as of 2-July-2018
         // ['United States', 0, 2018],
         ['Venezuela', 3, 2014],
-        ['Vietnam', 7, 2019]
+        ['Vietnam', 8, 2019]
 
     ]);
 
